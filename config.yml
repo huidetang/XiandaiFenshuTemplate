@@ -56,7 +56,7 @@ aut: ["ヨーシャ"]
 # a-nrt, nrt: 語り手
 # a-oth, oth: その他
 # a-pht, pht: 撮影責任者
-# a-pbl, pbl: 出版社（発行所）
+# a-pbl, pbl: 出版社（発行所） ※ サークル名はここに設定するとよい
 a-pbl: 恢徳堂
 # a-prt, prt: 印刷所
 prt: ねこのしっぽ
