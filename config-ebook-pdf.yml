@@ -1,0 +1,8 @@
+inherit: ["config.yml"]
+page_metric: A5
+catalogfile: catalog-download.yml
+# backcover: backcover.tex
+# bookname: louisa-works-2023-2-ebook
+texdocumentclass: ["review-jlreq", "media=ebook,paper=a5,fontsize=10pt,serial_pagination=true,tate,twoside,onecolumn"]
+# pdfmaker:
+#   coverimage: c103frontcover.pdf
