@@ -2,7 +2,7 @@ PREDEF:
   - preface.re
 
 CHAPS:
-  - ReVIEW独自Markdown:
+  - ReVIEW独自マークアップ言語:
     - test.re
   - Markdown:
     - markdown.re
