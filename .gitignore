@@ -154,5 +154,12 @@ $RECYCLE.BIN/
 # End of https://www.gitignore.io/api/vim,linux,macos,emacs,windows
 
 /node_modules
+/.yarn/
 
 sty/old/
+
+/vivliostyle-a5.css
+/vivliostyle-a5.css.map
+/vivliostyle-a6.css
+/vivliostyle-a6.css.map
+/_refiles/
