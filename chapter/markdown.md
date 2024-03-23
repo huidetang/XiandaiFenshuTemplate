@@ -2,6 +2,10 @@
 
 参考: https://github.com/kmuto/pandoc2review/blob/main/markdown-format.ja.md
 
+## 基本
+
+`config.yml`には拡張子を`.md`ではなく、`.re`で記述する。
+
 ## 段落
 
 Markdownの段落はそのままRe:VIEWでも段落になる。
