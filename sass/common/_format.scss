@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+html {
+  /* 組み方向 */
+  writing-mode: vertical-rl;
+
+  orphans: 1;
+  widows: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* タイトル文字列セット */
+.title {
+  string-set: title content();
+}
+
+@page {
+  size: 148mm 210mm;
+  // 行送り * 行数
+  width: $content-width;
+  // フォントサイズ * 文字数
+  height: $content-height;
+  margin: auto;
+}
+
+@page :left {
+  @top-left {
+    /* 左上ノンブル、柱（タイトル文字列） */
+    content: counter(page) "　　" env(pub-title);
+    font-size: 5.5pt;
+    vertical-align: top;
+    margin-left: 3.75pt;
+    margin-top: 6mm;
+    writing-mode: horizontal-tb;
+  }
+}
+
+@page :right {
+  @top-right {
+    /* 右上ノンブル、柱（出版物タイトル文字列） */
+    content: env(doc-title) "　　" counter(page);
+    font-size: 5.5pt;
+    vertical-align: top;
+    margin-right: 3.75pt;
+    margin-top: 6mm;
+    writing-mode: horizontal-tb;
+  }
+}
+
+/* 表紙ページ */
+.cover {
+  page: cover;
+}
+
+@page cover {
+  @top-left {
+    content: none;
+  }
+  @top-right {
+    content: none;
+  }
+}
+
+/* 目次ページ */
+.toc {
+  page: toc;
+}
+
+@page toc {
+  @top-left {
+    content: none;
+  }
+  @top-right {
+    content: none;
+  }
+}
+
+@media print {
+  .cover {
+    content: none;
+  }
+}

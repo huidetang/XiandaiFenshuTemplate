@@ -20,7 +20,6 @@
 	"extensions": [
 		"atsushieno.language-review",
         "taichi.vscode-textlint",
-        "coenraads.bracket-pair-colorizer-2",
         "8amjp.charactercount",
         "mhutchie.git-graph",
         "donjayamanne.githistory",

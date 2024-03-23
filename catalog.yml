@@ -2,7 +2,13 @@ PREDEF:
   - preface.re
 
 CHAPS:
-  - test.re
+  - ReVIEW独自Markdown:
+    - test.re
+  - Markdown:
+    - 
+  - Microsoft word:
+    - word-ref.re
+    - custom-reference.re
 
 APPENDIX:
 
