@@ -11,6 +11,8 @@ GEM
     mecab (0.996)
     nokogiri (1.15.5-arm64-darwin)
       racc (~> 1.4)
+    pandoc2review (2.0.0)
+      unicode-eaw
     parallel (1.23.0)
     parser (3.2.2.4)
       ast (~> 2.4.1)
@@ -51,6 +53,7 @@ GEM
     tty-logger (0.6.0)
       pastel (~> 0.8)
     unicode-display_width (2.5.0)
+    unicode-eaw (2.2.0)
 
 PLATFORMS
   arm64-darwin-21
@@ -59,6 +62,7 @@ DEPENDENCIES
   math_ml
   mecab
   nokogiri
+  pandoc2review
   psych
   rake
   review

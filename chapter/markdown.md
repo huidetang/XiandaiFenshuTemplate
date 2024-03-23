@@ -120,17 +120,13 @@ TeX数式形式が使える。
 ![与謝野晶子](yosano_akiko_is_always_watching_you.png)
 ~~~
 
-![与謝野晶子](yosano_akiko_is_always_watching_you.png)
-
 width、height、scale の属性が付けられているときには、scale パラメータに変換される。
 
 ~~~Markdown
 ![与謝野晶子](yosano_akiko_is_always_watching_you.png){scale=2}
 ~~~
 
-![与謝野晶子](yosano_akiko_is_always_watching_you.png){scale=2}
-
-前また後に文字があるときには、インライン画像と見なし、`@<icon>` に変換される。
+前また後に文字があるときには、インライン画像と見なし、アイコンに変換される。
 
 ~~~Markdown
 レターパックで ![与謝野晶子](yosano_akiko_is_always_watching_you.png) 送れ
