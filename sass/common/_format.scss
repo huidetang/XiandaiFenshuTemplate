@@ -19,15 +19,22 @@ html {
 }
 
 @page {
-  size: 148mm 210mm;
+  size: $paper-width $paper-height;
   // 行送り * 行数
   width: $content-width;
   // フォントサイズ * 文字数
   height: $content-height;
-  margin: auto;
+  // margin: auto;
+  margin-top: $ten;
+  margin-bottom: $chi;
+  marks: $marks;
 }
 
 @page :left {
+
+  margin-right: $nodo;
+  margin-left: $koguchi;
+
   @top-left {
     /* 左上ノンブル、柱（タイトル文字列） */
     content: counter(page) "　　" env(pub-title);
@@ -37,9 +44,21 @@ html {
     margin-top: 6mm;
     writing-mode: horizontal-tb;
   }
+
+  @right-middle {
+    /* 隠しノンブル */
+    font-size: 4pt;
+    margin-right: -3mm !important;
+    text-align: start !important;
+    content: counter(page);
+  }
 }
 
 @page :right {
+
+  margin-left: $nodo;
+  margin-right: $koguchi;
+
   @top-right {
     /* 右上ノンブル、柱（出版物タイトル文字列） */
     content: env(doc-title) "　　" counter(page);
@@ -48,6 +67,14 @@ html {
     margin-right: 3.75pt;
     margin-top: 6mm;
     writing-mode: horizontal-tb;
+  }
+
+  @left-middle {
+    /* 隠しノンブル */
+    font-size: 4pt;
+    margin-left: -3mm !important;
+    align-items: end !important;
+    content: counter(page);
   }
 }
 
