@@ -16,7 +16,7 @@ h1 {
   /* フォント */
   font-weight: bold;
   /* フォントサイズ */
-  font-size: 11.5pt;
+  font-size: 1.35rem;
   /* 字下げ */
   text-indent: 0;
   /* 直後の改ページ・改段禁止 */
@@ -39,7 +39,7 @@ h2 {
   /* フォント */
   font-weight: normal;
   /* フォントサイズ */
-  font-size: 10pt;
+  font-size: 1.18rem;
   /* 字下げ */
   text-indent: 6em;
   /* 直後の改ページ・改段禁止 */
@@ -51,6 +51,19 @@ h2 {
 h1 + h2 {
   // 1行空け
   margin-block-start: $base-line-height;
+}
+
+h2 {
+  /* フォント */
+  font-weight: normal;
+  /* フォントサイズ */
+  font-size: 1rem;
+  /* 字下げ */
+  text-indent: 8em;
+  /* 直後の改ページ・改段禁止 */
+  break-after: avoid;
+  // 2行取り
+  line-height: $base-line-height * 2;
 }
 
 ruby > rt {
